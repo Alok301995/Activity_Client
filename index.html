@@ -150,7 +150,7 @@
           event.accelerationIncludingGravity.z
         );
 
-        data_point.push([event.accelerationIncludingGravity.x , event.accelerationIncludingGravity.y , event.accelerationIncludingGravity.z])
+        data_point.push([event.accelerationIncludingGravity.x.toFixed(2) , event.accelerationIncludingGravity.y.toFixed(2) , event.accelerationIncludingGravity.z.toFixed(2)])
 
         updateFieldIfNotNull("Accelerometer_x", event.acceleration.x);
         updateFieldIfNotNull("Accelerometer_y", event.acceleration.y);
