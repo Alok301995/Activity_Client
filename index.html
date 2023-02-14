@@ -108,10 +108,7 @@
     </div>
 
 
-    <div class="show data">
-      <p class="data"></p>
-
-    </div>
+    <p class="data"></p>
 
     <!-- Start of Script -->
     <script>
@@ -189,7 +186,9 @@
           demo_button.innerHTML = "Start demo";
           demo_button.classList.add("btn-success");
           demo_button.classList.remove("btn-danger");
-          let data_p = document.getElementsByClassName('data');
+          let data_p = document.body.querySelector('.data');
+          // data_p.innerHTML = 'Hello'
+          console.log(data_point)
           data_string = JSON.stringify(data_point);
           data_p.innerHTML = data_string;
           is_running = false;
@@ -201,11 +200,6 @@
           demo_button.classList.add("btn-danger");
           is_running = true;
         }
-
-
-        
-
-
       };
     </script>
   </body>
