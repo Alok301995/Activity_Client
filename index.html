@@ -573,10 +573,10 @@
           demo_button.classList.add("btn-success");
           demo_button.classList.remove("btn-danger");
           let data_p = document.body.querySelector(".data");
-          console.log(data_p);
+          console.log(data_point);
           fetch("https://har-backend.onrender.com/eval/", {
             method: "POST",
-            body: JSON.stringify(data_p),
+            body: JSON.stringify(data_point),
             mode: "cors",
             headers: {
               "Content-Type": "application/json",
