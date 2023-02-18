@@ -156,13 +156,18 @@
         //   event.accelerationIncludingGravity.y,
         //   event.accelerationIncludingGravity.z,
         // ]);
-        data_point.data.push([event.accelerationIncludingGravity.x,
-          event.accelerationIncludingGravity.y,
-          event.accelerationIncludingGravity.z]);
+        // data_point.data.push([event.accelerationIncludingGravity.x,
+        //   event.accelerationIncludingGravity.y,
+        //   event.accelerationIncludingGravity.z]);
 
         updateFieldIfNotNull("Accelerometer_x", event.acceleration.x);
         updateFieldIfNotNull("Accelerometer_y", event.acceleration.y);
         updateFieldIfNotNull("Accelerometer_z", event.acceleration.z);
+
+
+        data_point.data.push([event.acceleration.x,
+          event.acceleration.y,
+          event.acceleration.z]);
 
         updateFieldIfNotNull("Accelerometer_i", event.interval, 2);
 
