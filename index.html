@@ -573,7 +573,7 @@
           demo_button.classList.add("btn-success");
           demo_button.classList.remove("btn-danger");
           let data_p = document.body.querySelector(".data");
-          console.log(data_p)
+          console.log(data_p);
           fetch("https://har-backend.onrender.com/eval/", {
             method: "POST",
             body: JSON.stringify(data_p),
