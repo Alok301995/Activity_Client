@@ -491,8 +491,8 @@
       // };
       
 
-      let data = {
-         labels: []
+      let data_point = {
+         data: []
       }
 
 
@@ -536,7 +536,7 @@
         //   event.accelerationIncludingGravity.y,
         //   event.accelerationIncludingGravity.z,
         // ]);
-        data.labels.push([event.accelerationIncludingGravity.x,
+        data_point.data.push([event.accelerationIncludingGravity.x,
           event.accelerationIncludingGravity.y,
           event.accelerationIncludingGravity.z]);
 
